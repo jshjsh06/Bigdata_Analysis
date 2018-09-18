@@ -62,3 +62,9 @@ vector6
 vector7 <- rep(c("a", "b"), times=c(10,5))
 vector7
 
+
+#  any, all
+x <- 10:1
+y <- -4:5
+any(x<y)
+all(x<y)
