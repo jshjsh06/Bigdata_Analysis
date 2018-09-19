@@ -68,3 +68,17 @@ x <- 10:1
 y <- -4:5
 any(x<y)
 all(x<y)
+
+# 파이프 사용
+library(magrittr)
+
+myData <- c(1:4)
+mean(myData)
+myData %>% mean # mean(myData)와 myData %>% mean은 결국 같다는 의미이다.
+
+my.function <- function(a) {
+  print(a + 2)
+}
+my.function(3)
+x <- 1
+x %>% my.function
