@@ -1,0 +1,55 @@
+* SQL in this class
+- DBI
+- RODBC
+- dbConnect
+- RSQLite
+- RMySQL
+- RPostgreSQL
+
+* sqldf package
+install.packages("sqldf")
+library(sqldf)
+
+
+sqldf('SELECT age, circumference FROM Orange WHERE Tree = 1 ORDER BY circumference ASC')
+
+* SQL Queries
+sqldf("SELECT * FROM iris")
+sqldf("select * from iris")
+
+sqldf('SELECT Time, demand from BOD')
+
+iris2 <- sqldf('SELECT "Petal.Width" FROM iris')
+
+* Wildcard
+sqldf('SELECT * FROM BOD')
+
+* LIMIT
+sqldf('SELECT * FROM iris LIMIT 5')
+
+* ORDER BY
+sqldf("SELECT * FROM Orange ORDER BY age ASC, circumference DESC LIMIT 5")
+
+* WHERE
+sqldf('SELECT demand FROM BOD WHERE Time < 3')
+sqldf('SELECT * FROM rock WHERE (peri > 5000 AND shape < .05) OR perm > 1000')
+
+* IN
+sqldf('SELECT * FROM BOD WHERE Time IN (1,7)')
+sqldf('SELECT * FROM BOD WHERE Time NOT IN (1,7)')
+
+* LIKE
+sqldf('SELECT * FROM chickwts WHERE feed LIKE "%bean" LIMIT 5')
+sqldf('SELECT * FROM chickwts WHERE feed NOT LIKE "%bean" LIMIT 5')
+
+* Aggregated data
+sqldf("SELECT AVG(circumference) FROM Orange")
+sqldf("SELECT tree, AVG(circumference) AS meancirc FROM Orange GROUP BY tree")
+
+* Counting data
+
+d <- data.frame(a = c(1,1,1), b = c(1,NA,NA))
+d
+sqldf("SELECT COUNT() as numrows FROM d")
+
+sqldf("SELECT COUNT(b) FROM d")
