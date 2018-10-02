@@ -136,6 +136,7 @@ df4
 df4$Ratio <- round(df4$Ratio, 3)
 df4
 
+# ylim은 범위를 정해주는 거임 (0.45~0.55 범위)
 g <- ggplot(df4, aes(x=Provinces, y=Ratio, fill=Sex)) + geom_bar(stat="identity") + coord_cartesian(ylim = c(0.45, 0.55)) + theme_wsj()
 g
 g2 <- geom_text(aes(y=Ratio, label=Ratio))
