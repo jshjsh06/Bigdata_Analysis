@@ -1,0 +1,25 @@
+﻿R 언어 syntax
+tidyverse
+...
+
+Python 언어 syntax
+Numpy, Pandas, Matplot...
+
+2 ~ 3주 Study
+Database 관리자 
+Database 개발자 
+Database 모델링(관계형) 
+Database 최적화 & 튜닝 
+(Oracle,MsSql,MySql,PostgreSql..)
+
+2 ~ 3주 Study
+MEAN Stack
+Mongo DB(1~2), Express JS(1), Angluar JS(1), Node JS(2)
+=> Javascript, NoSQL(Mongodb)
+Python Django....
+
+Javascript + HTML5, CSS3(2)
+Javascript OOP
+Javascript Pattern
+Javascript Framework
+(Angular JS(MVC)........)
