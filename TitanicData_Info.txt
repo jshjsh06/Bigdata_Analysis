@@ -1,0 +1,4 @@
+https://www.kaggle.com/c/titanic/data
+
+AIC(Akaike's An Information Criterion)
+AIC()¿Í step()ÇÔ¼ö
